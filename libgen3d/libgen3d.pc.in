@@ -1,0 +1,13 @@
+prefix=@prefix@
+exec_prefix=@prefix@
+libdir=@exec_prefix@/lib
+includedir=@prefix@/include
+
+Name: @PACKAGE@
+Description: Generic 3D Library
+Version: @VERSION@
+Requires: 
+Conflicts: 
+Libs: -L${libdir} -lgen3d
+Cflags: -I${includedir}
+
