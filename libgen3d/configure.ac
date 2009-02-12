@@ -30,12 +30,7 @@ dnl Checks for libraries
 if [ ! test "x$enable_debug" != "xyes"]; then
   AC_DEFINE(DEBUG, 1, [Define to enable debug build])
   CXXFLAGS="${CXXFLAGS} -g"
-  pkg_modules="StopClock >= 0.1"
   AC_MSG_RESULT(yes)
-  # check for pkg-config stuff
-  PKG_CHECK_MODULES(PACKAGE, [$pkg_modules])
-  AC_SUBST(PACKAGE_CFLAGS)
-  AC_SUBST(PACKAGE_LIBS)  
 else
   AC_MSG_RESULT(no)
 fi

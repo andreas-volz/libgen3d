@@ -41,7 +41,6 @@
 #include "Euler.h"
 #include "Vector3.h"
 #include "Quaternion.h"
-#include "util.h"
 
 namespace Gen3D {
 
@@ -75,6 +74,13 @@ namespace Gen3D {
 class Matrix
 {
 public:
+  enum RotateAxis
+  {
+    X_AXIS,
+    Y_AXIS,
+    Z_AXIS
+  };
+
   /// the Matrix is saved in this array
   float data[16];
 

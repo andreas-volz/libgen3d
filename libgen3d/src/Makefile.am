@@ -3,7 +3,7 @@
 
 INCLUDES =
 
-AM_CXXFLAGS = @PACKAGE_CFLAGS@ \
+AM_CXXFLAGS = \
 	 -Wall
 
 lib_LTLIBRARIES = libgen3d.la
@@ -15,9 +15,8 @@ libgen3d_la_SOURCES = \
 	Euler.cpp\
 	MathUtil.cpp\
 	Matrix.cpp\
-	Quaternion.cpp\
-	util.cpp
+	Quaternion.cpp
     
 libgen3d_la_LDFLAGS = 
 
-libgen3d_la_LIBADD = @PACKAGE_LIBS@
+libgen3d_la_LIBADD = 
