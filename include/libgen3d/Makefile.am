@@ -8,7 +8,6 @@ libgen3d_include_DATA = \
 	Vector2.h\
 	Vertex.h\
 	Color.h\
-	util.h\
 	Euler.h\
 	MathUtil.h\
 	Matrix.h\
